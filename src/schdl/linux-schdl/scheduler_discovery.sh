@@ -42,6 +42,22 @@ echo
 # Normalmente se almacena en /usr/src, que es el directorio
 # destinado a codigo fuente del sistema.
 
+README="./README.d"
+echo $asd
+
+if [-f $README]
+then 
+    resultado=$(echo $README existe)
+else
+    resultado="echo $README no existe"
+fi 
+
+echo
+
+exit 0
+
+
+
 echo "Paso 1: Localizando el codigo fuente del kernel..."
 cd /usr/src || exit 1
 ls
